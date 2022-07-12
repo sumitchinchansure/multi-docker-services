@@ -17,7 +17,7 @@ after_succes:
   # login to docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # push above images to docker hub
-  - doker push sumitchinchansure/multi-client 
-  - doker push sumitchinchansure/multi-nginx 
-  - doker push sumitchinchansure/multi-server 
-  - doker push sumitchinchansure/multi-worker
+  - docker push sumitchinchansure/multi-client 
+  - docker push sumitchinchansure/multi-nginx 
+  - docker push sumitchinchansure/multi-server 
+  - docker push sumitchinchansure/multi-worker
